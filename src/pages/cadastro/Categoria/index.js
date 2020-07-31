@@ -23,7 +23,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = 'https://imersaoflix.herokuapp.com/categorias';
     fetch(URL).then(async (response) => {
       const dados = await response.json();
       setCategorias([
